@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 let mongoose = require("mongoose");
 
 // for production.
-const mongoURI = "mongodb+srv://VIKAS:VIKAS@firstcluster.1fyyzpk.mongodb.net/bookMovie?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGODBURI;
 
 // for development.
 // const mongoURI = "mongodb://localhost:27017/" + "bookMovie"
